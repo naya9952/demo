@@ -13,6 +13,8 @@ public class Member
     private long seq;
     private String name;
     private  int age;
+    private String gender;
+    private long stu_num;
 
     public long getSeq() {
         return seq;
@@ -36,5 +38,21 @@ public class Member
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public long getStu_num() {
+        return stu_num;
+    }
+
+    public void setStu_num(long stu_num) {
+        this.stu_num = stu_num;
     }
 }
