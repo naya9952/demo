@@ -23,6 +23,7 @@
           </tr>
         </tbody>
       </table>
+      <a href="#/Equipment" class="btn btn-info" role="button" >등록</a>
     </div>
   </div>
 </template>

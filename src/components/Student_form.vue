@@ -18,6 +18,7 @@
           </tr>
         </tbody>
       </table>
+      <a href="#/Student" class="btn btn-info" role="button" >등록</a>
     </div>
   </div>
 </template>
@@ -39,4 +40,5 @@ export default {
   margin-top: 30px;
 
 }
+
 </style>
