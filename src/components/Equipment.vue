@@ -1,0 +1,25 @@
+<template>
+  <div class="panel panel-default">
+    <h2>장비 리스트
+    <a href="#/Equipment_form" class="btn btn-info" role="button" id ='create'>등록</a></h2>
+    <div class="panel-body">
+      
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Equipment',
+  data () {
+    return {
+      msg: 'Equipment'
+    }
+  }
+}
+</script>
+<style>
+#create {
+  margin-left: 90%;
+}
+</style>
