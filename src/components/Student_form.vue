@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="container">
       <h2>학생 등록</h2>         
-      <table id='table_1' class="table table-bordered">
+      <table id='table_2' class="table table-bordered">
         <tbody>
           <tr>
             <td>이름</td>
@@ -13,8 +13,8 @@
             <td><input class="form-control" id="stu_num" type="text"></td>
           </tr>
           <tr>
-            <td>전화번호</td>
-            <td><input class="form-control" id="phone_num1" type="text"> </td>
+            <td>Email</td>
+            <td><input class="form-control" id="email" type="text"> </td>
           </tr>
         </tbody>
       </table>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 <style>
-#table_1{
+#table_2{
   width: 30%;
   margin-left: 33%;
   margin-top: 30px;
