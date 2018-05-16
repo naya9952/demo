@@ -11,16 +11,11 @@
             <th>Email</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>박성민</td>
-            <td>201741087</td>
-            <td>naya9952@gmail.com</td>
-          </tr>
-          <tr>
-            <td>홍길동</td>
-            <td>201640175</td>
-            <td>Hong@gachon.ac.kr</td>
+        <tbody v-if="members && members.length">
+          <tr v-for="post in members">
+            <td>{{post.name}}</td>
+            <td>{{post.stu_num}}</td>
+            <td>{{post.email}}</td>
           </tr>
         </tbody>
       </table>  
@@ -29,12 +24,25 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'Student',
-  data () {
+  data() {
     return {
-      msg: 'Student'
+      members: [],
+      errors: []
     }
+  },
+
+  created() {
+    axios.get(`http://localhost:8080/members`)
+    .then(response => {
+      this.members = response.data._embedded.members
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 </script>

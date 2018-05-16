@@ -11,21 +11,11 @@
             <th>Serial Number</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>TG452018AG</td>
-            <td>모니터</td>
-            <td>4c5cau689au</td>
-          </tr>
-          <tr>
-            <td>CosyM936WL</td>
-            <td>마우스</td>
-            <td>CSY-M936ML25d</td>
-          </tr>
-          <tr>
-            <td>TG42KB</td>
-            <td>키보드</td>
-            <td>2nc84kchshak2</td>
+       <tbody v-if="equipments && equipments.length">
+          <tr v-for="post in equipments">
+            <td>{{post.eq_name}}</td>
+            <td>{{post.type}}</td>
+            <td>{{post.s_num}}</td>
           </tr>
         </tbody>
       </table>   
@@ -34,12 +24,25 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'Equipment',
-  data () {
+  data() {
     return {
-      msg: 'Equipment'
+      equipments: [],
+      errors: []
     }
+  },
+
+  created() {
+    axios.get(`http://localhost:8080/equipments`)
+    .then(response => {
+      this.equipments = response.data._embedded.equipments
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
 }
 </script>
