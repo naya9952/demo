@@ -12,8 +12,7 @@ public class Member
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long seq;
     private String name;
-    private  int age;
-    private String gender;
+    private String email;
     private long stu_num;
 
     public long getSeq() {
@@ -32,20 +31,12 @@ public class Member
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public long getStu_num() {

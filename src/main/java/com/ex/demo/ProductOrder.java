@@ -11,7 +11,9 @@ public class ProductOrder {
 
     @ManyToOne
     @JoinColumn(name = "MEMBER_SEQ")
+
     private  Member member;
+    //private Equipment Equipment;
 
     public long getSeq() {
         return seq;

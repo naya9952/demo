@@ -6,12 +6,10 @@ import javax.persistence.*;
 public class Equipment {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private long seq;
-    private String title;
-    private String date;
+    private String eq_name;
+    private String type;
+    private String s_num;
 
-    @ManyToOne
-    @JoinColumn(name = "MEMBER_SEQ")
-    private  Member member;
 
     public long getSeq() {
         return seq;
@@ -21,27 +19,27 @@ public class Equipment {
         this.seq = seq;
     }
 
-    public String getTitle() {
-        return title;
+    public String getEq_name() {
+        return eq_name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setEq_name(String eq_name) {
+        this.eq_name = eq_name;
     }
 
-    public String getDate() {
-        return date;
+    public String getS_num() {
+        return s_num;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setS_num(String s_num) {
+        this.s_num = s_num;
     }
 
-    public Member getMember() {
-        return member;
+    public String getType() {
+        return type;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setType(String type) {
+        this.type = type;
     }
 }
