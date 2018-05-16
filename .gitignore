@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+=======
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -23,3 +39,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+>>>>>>> 4686eea3937731f8dd4303e16c8a66870388dec3
