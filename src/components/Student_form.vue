@@ -19,6 +19,7 @@
         </tbody>
       </table>
       <button v-on:click="postPost()" type="button" class="btn btn-primary">등록</button>
+      <button type="button" class="btn btn-primary">취소</button>
     </div>
   </div>
 </template>
@@ -46,6 +47,8 @@ methods: {
     .catch(e => {
       this.errors.push(e)
     })
+      window.location.href="http://localhost:8081/#/Student";
+      alert("등록되었습니다.");
   }
 }
   // Pushes posts to the server when called.
