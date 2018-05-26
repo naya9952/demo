@@ -47,12 +47,10 @@ methods: {
     .catch(e => {
       this.errors.push(e)
     })
-      window.location.href="http://localhost:8081/#/Student";
       alert("등록되었습니다.");
+      window.location.href="http://localhost:8081/#/Student"; 
+    }
   }
-}
-  // Pushes posts to the server when called.
- 
 }
 </script>
 <style>

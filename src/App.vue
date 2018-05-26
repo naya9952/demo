@@ -8,7 +8,7 @@
             <li class="active"><a href="#/">Home</a></li>
             <li><a href="#/Equipment">장비</a></li>
             <li><a href="#/Student">학생</a></li>
-            <li><a href="#">대여 현황</a></li>
+            <li><a href="#/Order">대여 현황</a></li>
           </ul>
         </div>
       </nav>
@@ -28,7 +28,7 @@
                         <a href="#/"> 홈 </a>|                                        
                         <a href="#/Equipment"> 장비 </a>|                  
                         <a href="#/Student"> 학생 </a>|                            
-                        <a href="#/"> 대여 현황 </a>                
+                        <a href="#/Order"> 대여 현황 </a>                
                 </ul>
             </div>
         

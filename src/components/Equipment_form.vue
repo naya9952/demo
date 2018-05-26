@@ -10,12 +10,14 @@
           </tr>
           <tr>
             <td>종류</td>
-            <td> <select id="company" class="form-control" v-model="postType">
+            <td> 
+              <select id="company" class="form-control" v-model="postType">
                     <option>-----선택-----</option>
                     <option>모니터</option>
                     <option>마우스</option>
                     <option>키보드</option>
-      </select> </td>
+              </select> 
+            </td>
           </tr>
           <tr>
             <td>Serial Number</td>
@@ -52,12 +54,10 @@ methods: {
     .catch(e => {
       this.errors.push(e)
     })
-      window.location.href="http://localhost:8081/#/Equipment";
       alert("등록되었습니다.");
-  }
-}
-  // Pushes posts to the server when called.
- 
+      window.location.href="http://localhost:8081/#/Equipment";
+   }
+  } 
 }
 </script>
 <style>
@@ -65,6 +65,5 @@ methods: {
   width: 30%;
   margin-left: 33%;
   margin-top: 30px;
-
 }
 </style>

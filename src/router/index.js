@@ -5,6 +5,7 @@ import Student from '@/components/Student'
 import Equipment from '@/components/Equipment'
 import Student_form from '@/components/Student_form'
 import Equipment_form from '@/components/Equipment_form'
+import Order from '@/components/Order'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path: '/Equipment_form',
       name: 'Equipment_form',
       component: Equipment_form
+    },
+    {
+      path: '/Order',
+      name: 'Order',
+      component: Order
     }
   ]
 })
